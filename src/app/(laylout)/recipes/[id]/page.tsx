@@ -6,7 +6,7 @@ const getRecipe = async (id: string) => {
   return res.json();
 };
 
-const RecipeDetailPage = async ({ params }: { params: { id: string } }) => {
+export const RecipeDetailPage = async ({ params }: { params: { id: string } }) => {
   const recipe = await getRecipe(params.id);
 
   return (

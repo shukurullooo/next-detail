@@ -4,7 +4,7 @@ const getUser = async (id: string) => {
   return res.json();
 };
 
-const UserDetailPage = async ({ params }: { params: { id: string } }) => {
+export const UserDetailPage = async ({ params }: { params: { id: string } }) => {
   const user = await getUser(params.id);
 
   return (
